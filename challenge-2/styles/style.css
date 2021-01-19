@@ -1,0 +1,134 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+
+/* Color's variables */
+:root{
+  --background-color: #F9FAFC;
+  --button-color: #4B776F;
+  --span-color: #E6E9ED;
+  --border-color: #CCC;
+}
+
+/* Reset */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+
+/* General styles */
+body{
+  background-color: var(--background-color);
+  font-family: 'Lato', sans-serif;
+}
+
+label{
+  margin-right: 20px;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+input{
+  height: 35px;
+  padding-right: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 0 3px 3px 0;
+  text-align: end;
+  font-weight: 300;
+  font-size: 1.1rem;
+}
+
+/* Content */
+.content-container{
+  width: 40%;
+  margin: auto;
+}
+
+#form-container{
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+
+#form-container div{
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 15px;
+  align-items: center;
+}
+
+.input-container{
+  width: 50%;
+}
+
+.input-container span{
+  background-color: var(--span-color);
+  color: #555;
+  width: 35px;
+  height: 35px;
+  border-left: 1px solid var(--border-color);
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+  border-radius: 3px 0 0 3px;
+  padding-top: 5px;
+  text-align: center;
+}
+
+.input-container input{
+  flex: 1;
+}
+
+.form-submit{
+  width: 150px;
+  height: 35px;
+  background-color: var(--button-color);
+  color: #FFF;
+  font-size: 17px;
+  border-radius: 3px;
+  margin-left: 50%;
+  cursor: pointer;
+}
+
+.form-submit:hover{
+  opacity: 0.8;
+}
+
+/* Result */
+#result-container{
+  font-weight: 700;
+  display: none;
+}
+
+.payment-value{
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.4rem;
+}
+
+table, th, td{
+  border: 1px solid var(--border-color);
+  border-collapse: collapse;
+}
+
+table{
+  width: 100%;
+  margin: 20px 0;
+
+}
+
+th, td{
+  height: 40px;
+}
+
+td:first-child{
+  text-align: center;
+}
+
+td{
+  text-align: end;
+  padding-right: 5px;
+}

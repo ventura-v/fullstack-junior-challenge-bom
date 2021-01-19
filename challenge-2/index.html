@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Fullstack Junior Challenge</title>
+
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+
+  <div class="content-container">
+    <form id="form-container">
+
+      <!-- Value -->
+      <div class="value-container">
+        <label for="value">Valor</label>
+        <div class="input-container">
+          <span>R$</span><input id="value" name="value" type="text">
+        </div>
+      </div>
+
+      <!--  -->
+      <div class="initial-value-container">
+        <label for="initial-value">Valor Entrada</label>
+        <div class="input-container">
+          <span>R$</span><input id="initial-value" name="initial-value" type="text" required>
+        </div>
+      </div>
+
+      <!--  -->
+      <div class="payments-container">
+        <label for="payments">Número de prestações</label>
+        <div class="input-container">
+          <span></span><input id="payments" name="payments" type="number" required>
+        </div>
+      </div>
+
+      <div class="rate-container">
+        <label for="rate">Taxa de Juros (% ao ano)</label>
+        <div class="input-container">
+          <span>%</span><input id="rate" name="rate" type="text" required>
+        </div>
+      </div>
+
+      <!-- Button -->
+      <button class="form-submit" type="submit">Calcular</button>
+
+    </form>
+
+    <div id="result-container">
+      <p class="payment-value">Valor da prestação <span id="payment-value">R$ </span></p>
+
+      <table id="table-result">
+        <tr>
+          <th>Nº</th>
+          <th>Prestação</th>
+          <th>Juros</th>
+          <th>Amortização</th>
+          <th>Saldo Devedor</th>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <script src="./scripts/script.js"></script>
+</body>
+
+</html>
